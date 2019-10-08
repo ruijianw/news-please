@@ -7,7 +7,7 @@ elasticsearch>=2.4
 beautifulsoup4>=4.3.2
 readability-lxml>=0.6.2
 --no-cache-dir
-git+git@github.com:ruijianw/newspaper.git
+git+https://github.com/ruijianw/newspaper.git
 langdetect>=1.0.7
 python-dateutil>=2.4.0
 plac>=0.9.6
