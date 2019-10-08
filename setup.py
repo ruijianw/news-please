@@ -53,21 +53,9 @@ news-please is an open source, easy-to-use news crawler that extracts structured
           'lxml>=3.3.5',
           'awscli>=1.11.117',
           'hurry.filesize>=0.9',
-          'bs4'
+          'bs4',
+          'newspaper3k@git+https://github.com/ruijianw/newspaper.git@master#egg=newspaper3k'
       ],
-      extras_require={
-          ':python_version == "2.7"': [
-              'newspaper',
-              'future>=0.16.0',
-              'hurry.filesize>=0.9'
-          ],
-          ':python_version >= "3.0"': [
-              'newspaper3k',
-          ],
-          ':sys_platform == "win32"': [
-              'pywin32>=220'
-          ]
-      },
       entry_points={
           'console_scripts': ['news-please = newsplease.__main__:main',
                               'news-please-cc = newsplease.examples.commoncrawl:main']
